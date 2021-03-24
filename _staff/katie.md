@@ -13,9 +13,9 @@ email: katie.wilson@anu.edu.au
 
 ![{{page.name}}](/images/{{ page.photo }})
 
-* [{{page.email}}](mailto:{{page.name}})
+* Email:[{{page.email}}](mailto:{{page.name}})
 * [Google scholar](https://scholar.google.com/citations?user=G9lLIb8AAAAJ)
-* Twitter:[katiewilsona](http://katiewilsona/)
+* Twitter:[@katiewilsona](http://katiewilsona/)
 * [LinkedIn](http://linkedin.com/in/katie-wilson-126718bb)
 
 Dr Katie Wilson was awarded the young Australian Biochemist of the year for 2020.
