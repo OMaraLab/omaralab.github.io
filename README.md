@@ -32,9 +32,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 [Some link](https:somelink.com/)
 ![Some image](/images/unknown.jpg)
 ```  
-Fill in all the field in the *front matter* 
-Add a photo in the /images folder and put the file name in the photo field, or select unknown.jpg 
-You can copy the file as is to and from the _emeritus folder 
+Fill in all the fields in the *front matter*. Add a photo in the /images folder, and put the file name in the photo field, or select unknown.jpg.
+You can copy the file as is to and from the _emeritus folder. 
 Replace the lipsum text with further markdown content
 
 ## Adding a news item
