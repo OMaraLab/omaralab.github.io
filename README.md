@@ -2,7 +2,7 @@
 
 To add a new team member add a file in the folder _staff in the following format
 
-```
+```Liquid
 ---
 name: someone
 photo: imagefile
@@ -14,8 +14,12 @@ email: email address
 # {{page.name}} 
 ### {{page.quals}}
 
-
 ![{{page.name}}](/images/{{ page.photo }})
 
 * [{{page.email}}](mailto:{{page.name}})
+
+{% comment %}
+  Add narrative content here
+{% endcomment %}
 ```  
+Add a photo in the /images folder and 
