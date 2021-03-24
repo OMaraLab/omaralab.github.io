@@ -7,9 +7,10 @@ permalink: /news.html
         <h1>News</h1>
         {% assign sorted = site.news | sort: 'date' | reverse %}
         {% for story in sorted %}
-            <h5>{{story.date | date: "%e %b, %Y" }}</h5>
-            <h4><a href="{{story.url}}">{{story.title}}</a></h4>
-            <br/>
+            <div class=newsitem>
+                <div class=date>{{story.date | date: "%e %b, %Y" }}</div>
+                <div class=headline><a href="{{story.url}}">{{story.title}}</a></div>
+            </div>
         {% endfor %}
     </body>
 </html>
