@@ -1,0 +1,17 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+#menu a {
+    color: rgb(189, 189, 189);
+    font-size: 24px;
+    font-weight: 300;
+    background: none;
+    text-shadow: #111 0px 0px 10px;
+  }
+  
+  #menu a:hover, #menu a:focus {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+  }

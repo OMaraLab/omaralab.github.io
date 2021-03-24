@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: O'Mara Group
+title: O'Mara Lab
 email: u6612992@anu.edu.au
 description: Multi-scale modelling of biological systems
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -27,7 +27,7 @@ twitter_username: khiron
 github_username:  khiron
 
 # Build settings
-theme: jekyll-theme-tactile
+theme: jekyll-theme-slate
 plugins:
   - jekyll-feed
 
