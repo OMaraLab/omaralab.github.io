@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+# Research Interests
+
+How do biological complexes assemble and function? How do proteins fold? How do membrane lipids regulate protein function? How does a drug molecule bind to the right receptor in the crowded and complex environment of the cell? How do molecules spontaneously self-assemble to produce a complex that has biological function?
+
+![O'Mara lab](/images/escape-banner.png)
+## We love puzzles
+
+These are the kinds of questions we like! Our research lies at the interface of chemistry, physics and biology. Using cutting-edge computational techniques and molecular dynamics simulations, we examine the underlying dynamic interactions between proteins, phospholipids and ligand molecules to provide the link between the structure and function of biological molecules by modelling the complex environment of cell.

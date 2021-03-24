@@ -1,0 +1,105 @@
+---
+permalink: /publish.html
+---
+<html>
+    <body>
+        <h1>O'Mara lab publications</h1>
+        {% assign byyear = site.publications | group_by: "year" | reverse %}
+        {% assign yearsSorted = byyear | sort: "name" | reverse %}
+        
+        {% for y in yearsSorted %}
+            <h1>{{ y.name }}</h1>
+            <ul>
+                {% assign yearTitlesSorted = y.items | sort: "FI" %}
+                {% for paper in yearTitlesSorted %}
+                    <li>{{ paper.cite }} [<a href="https://doi.org/{{ paper.DOI }}">link</a>] </li>
+                {% endfor %}
+                </ul>
+        {% endfor %}        
+        <h1>2016</h1>
+        <ul>
+            <li>AE Mohamed, K Condic-Jurkic, FH Ahmed, P Yuan, ML O'Mara, CJ Jackson, ML Coote. 2016. Hydrophobic Shielding Drives Catalysis of Hydride Transfer in a Family of F420H2-Dependent Enzymes. Biochemistry 55: 6908-6918</li>
+            <li>JA Mitchell, JH Whitfield, WH Zhang, C Henneberger, H Janovjak, ML O'Mara, CJ Jackson. 2016. Rangefinder: A semi-synthetic FRET sensor design algorithm. ACS Sensors 1:1286-90</li>
+            <li>Ahmed, FH, AE Mohamed, PD Carr,BM Lee, K Condic-Jurkic, ML O’Mara, CJ Jackson. 2016. Rv2074 is a novel F420H2-dependent biliverdin reductase in Mycobacterium tuberculosis. Protein Science 25:1692-1709</li>
+            <li>Subramanian, N, AJ Scopelitti, JE Carland, RM Ryan, ML O’Mara, RJ Vandenberg. 2016. Identification of a 3rd Na+ Binding Site of the Glycine Transporter, GlyT2. PLoS One 11:e0157583</li>
+            <li>Subramanian, N, K Condic-Jurkic, ML O’Mara. 2016. Structural and dynamic perspectives on the promiscuous transport activity of P-glycoprotein. Neurochemistry International 98:146-52</li>
+            <li>Subramanian, N, A Schumann-Gillett, AE Mark, ML O’Mara. Understanding the accumulation of P-glycoprotein substrates within cells: The effect of cholesterol on membrane partitioning. BBA Biomembranes 858:776-782</li>
+        </ul>
+        <h1>2015</h1>
+        <ul>
+        <li>Deplazes, E, SL Begg, JH van Wonderen, R Campbell, B Kobe, JC Paton, F MacMillan, CA McDevitt, ML O’Mara. 2015. Characterizing the conformational dynamics of metal-free PsaA using molecular dynamics simulations and electron paramagnetic resonance spectroscopy. Biophysical Chemistry 207:51-60</li>
+            <li>Fairweather, SJ, A Bröer, N Subramanian, E Tumer, Q Cheng, D Schmoll, ML O' Mara, S Bröer. 2015. Molecular basis for the interaction of the mammalian amino acid transporters B0AT1 and B0AT3 with their ancillary protein collectrin. Journal of Biological Chemistry 290:24308-25</li>
+            <li>Subramanian, N, K Condic-Jurkic, AE Mark, ML O’Mara. 2015. Identification of possible binding sites for morphine and nicardipine on the multidrug transporter P-glycoprotein using umbrella sampling techniques. Journal of Chemical Information and Modeling 55:1202–1217</li>
+            <li>Begg, SL, BA Eijkelkamp, Z Luo, RM Couñago, JR Morey, MJ Maher, CY Ong, AG McEwan, B Kobe, ML O’Mara, JC Paton, CA McDevitt. 2015. Dysregulation of transition metal ion homeostasis is the molecular basis for cadmium toxicity in Streptococcus pneumoniae. Nature Communications, 6:6418</li>
+        </ul>
+        <h1>2014</h1>
+        <ul>
+            <li>Deplazes, E, and ML O’Mara*. 2014. Polypeptide and Protein Modeling for Drug Design. Encyclopedia of Computational Neuroscience Springer Reference (springerreference.com). Springer-Verlag Berlin Heidelberg. doi:10.1007/SpringerReference_349045 (*corresponding author)</li>
+            <li>ML O’Mara. Joining the dots through molecular dynamics: linking the crystal structures of a membrane transport protein to its physiological conformation. Australian Biochemist 45:7-11</li>
+            <li>AJ Brooks, AW Dai, ML O’Mara, D Abankwa, Y Chhabra, RA Pelekanos, O Gardon, KA Tunny, KM Blucher, CJ Morton, MW Parker, E Sierecki, Y Gambin, K Alexandrov, IA Wilson, M Doxastakis, AE Mark, MJ Waters. A new cytokine receptor activation paradigm: activation of JAK2 by the growth hormone receptor. Science 344:1249783</li>
+            <li>JH van Wonderen*, RM McMahon*, ML O’Mara*, CA McDevitt, AJ Thomson, ID. Kerr, F MacMillan and R Callaghan. 2014. The central cavity of ABCB1 undergoes alternating access during ATP hydrolysis. FEBS Journal, 281: 2190–2201 (*co-first authors)</li>
+            <li>ML O’Mara* and AE Mark. 2014. Structural characterization of two metastable ATP-bound states of P-glycoprotein. PLoS One 9:e91916 (*corresponding author)</li>
+            <li>CD Plumptre, BA Eijkelkamp, JR Morey, F Behr, RM Couñago, AD Ogunniyi, B Kobe, ML O’Mara, JC Paton, CA McDevitt. 2014. Zinc homeostasis in Streptococcus pneumoniae and its requirement for bacterial colonization. Molecular Microbiology 91: 834–851</li>
+            <li>W Chen, R Wang, B Chen, X Zhong, H Kong, Y Bai, Q Zhou, C Xie, J Zhang, A Guo, X Tian, PP Jones, ML O’Mara, Y Liu, T Mi, L Zhang, J Bolstad, L Semeniuk, H Cheng, J Zhang, J Chen, DP Tieleman, AM Gillis, HJ Duff, M Fill, LS Song, SRW Chen. 2014. The Ryanodine Receptor store sensing gate controls Ca2+ waves and Ca2+ triggered arrhythmias. Nature Medicine, 20:184–192</li>
+        </ul>
+        <h1>2013</h1>
+        <ul>
+            <li>RM Couñago, MP Ween, SL Begg, M Bajaj, J Zuegg, ML O’Mara, MA Cooper, AG McEwan, JC Paton, B Kobe, CA McDevitt. Imperfect coordination chemistry facilitates metal ion release in the Psa permease. Nature Chemical Biology 10:35–41</li>
+            <li>ZG Jia, ML O’Mara, J Zuegg, MA Cooper and AE Mark. 2013. Vancomycin: ligand recognition, dimerization and super-complex formation. . Journal 280:1294–1307</li>
+        </ul>
+        <h1>2012</h1>
+        <ul>
+            <li>TH Schmidt, ML O’Mara and C Kandt. 2012. Molecular dynamics simulations of membrane proteins: building starting structures and example applications. Current Physical Chemistry 2: 363-378.</li>
+            <li>ML O’Mara and AE Mark. 2012. The effect of environment on the structure of a membrane protein: P-glycoprotein under physiological conditions. Journal of Chemical Theory and Computation 8: 3964-3976.</li>
+            <li>SJ Fairweather, A Broer, ML O’Mara and S Broer. 2012. Intestinal peptidases form functional complexes with neutral amino acid transporter B0AT1 Biochemical Journal 446: 135-148</li>
+        </ul>
+        <h1>2011</h1>
+        <ul>
+            <li>ZG Jia, ML O’Mara , J Zuegg, MA Cooper and AE Mark. 2011. The effect of environment on the recognition and binding of vancomycin to native and resistant forms of lipid II. Biophysical Journal 101:2684-2692</li>
+            <li>JR McArthur, G Singh, ML O’Mara, D McMaster, V Ostroumov, DP Tieleman and RJ French. 2011. Orientation of m-conotoxin PIIIA in a sodium channel vestibule, based on its voltage dependence of binding. Molecular Pharmacology 80:219-227</li>
+            <li>Y Xue*, ML O’Mara*, PPT Surawski, M Trau, and AE Mark. 2011. Effect of Poly(ethylene glycol) (PEG) Spacers on the Conformational Properties of Small Peptides: A Molecular Dynamics Study. Langmuir 27:296-303. (*co-first authors)</li>
+        </ul>
+        <h1>2010</h1>
+        <ul>
+            <li>E Crowley, ML O'Mara, ID Kerr, R Callaghan. 2010. Transmembrane helix 12 plays a pivotal role in coupling energy provision and drug binding in ABCB1. FEBS Journal 277:3974-85</li>
+        </ul>
+        <h1>2009</h1>
+        <ul>
+            <li>PM Jones, ML O'Mara, AM George. 2009. ABC transporters: a riddle wrapped in a mystery inside an enigma. Trends in Biochemical Sciences 34:520-31</li>
+            <li>E Crowley, ML O'Mara, C Reynolds, DP Tieleman, J Storm, ID Kerr, R Callaghan. 2009. Transmembrane Helix 12 Modulate Progression of the ATP Catalytic Cycle in ABCB1. Biochemistry 48:6249-58</li>
+            <li>E Procko, ML O’Mara, WFD Bennett, DP Tieleman and R Gaudet. 2009. The mechanism of ABC transporters: general lessons from structural and functional studies of an antigenic peptide transporter. FASEB Journal 23:1287-1302</li>
+            <li>G Oancea, ML O’Mara, WFD Bennett, DP Tieleman, R Abele and R Tampé. 2009. Structural Arrangement of the Transmission Interface in the ABC Transporter TAP Critical for Antigen Binding and Translocation. Proceedings of the National Academy of Sciences 106:5551-56</li>
+        </ul>
+        <h1>2008</h1>
+        <ul>
+            <li>TL Klassen, ML O'Mara, M Redstone, AN Spencer, WJ Gallin. 2008. Non-linear intramolecular interactions and voltage sensitivity of a K V1 family potassium channel from Polyorchis penicillatus (Eschscholtz 1829) Journal of Experimental Biology 211:3442-53</li>
+            <li>A Moussatova, C Kandt, ML O’Mara, DP Tieleman. 2008. ATP binding cassette transporters in Escherichia coli. BBA Biomembranes 1778:1757-71</li>
+            <li>J Storm, S Modok, ML O’Mara, DP Tieleman, ID Kerr, R Callaghan. 2008. The cytosolic region of TM6 in P-glycoprotein: topographical analysis and functional perturbation by site directed labelling. Biochemistry 47:3615-24</li>
+        </ul>
+        <h1>2007</h1>
+        <ul>
+            <li>J Lawson, ML O'Mara, ID Kerr. 2007. Structure-based interpretation of the mutagenesis database for the nucleotide binding domains of P-glycoprotein. BBA Biomembranes 1778:376-91</li>
+            <li>ML O’Mara and DP Tieleman. 2007. P-glycoprotein models of apo and ATP-bound states based on homology with Sav1866 and MalK. FEBS Letters 581:4217-22</li>
+            <li>J Storm, ML O’Mara, E Crowley, J Peall, DP Tieleman, ID Kerr and R Callaghan. 2007. Residue G346C in the transmembrane segment six is involved in inter-domain communication in P-glycoprotein. Biochemistry 46:9899-9910</li>
+        </ul>
+        <h1>2006</h1>
+        <ul>
+            <li>E Oloo, C Kandt, ML O’Mara and DP Tieleman. 2006. Computer simulations of ABC transporter components. Biochemistry and Cell Biology 84:900-911</li>
+            <li>ML O’Mara, A Oakley and S Broer. 2006. Mechanism and putative structure of B0-like neutral amino acid transporters. Journal of Membrane Biology 213:111-18</li>
+        </ul>
+        <h1>2005</h1>
+        <ul>
+            <li>ML O'Mara, BA Cromer, MW Parker and SH Chung. 2005. Homology Model of the GABAA Receptor Examined Using Brownian Dynamics. Biophysical Journal 88:3286-99</li>
+        </ul>
+        <h1>2004</h1>
+        <ul>
+            <li>B Corry, M O’Mara and SH Chung. 2004. Permeation dynamics of chloride ions in the ClC-0 and ClC-1 channels. Chemical Physics Letters 386:233-238</li>
+            <li>B Corry, M O’Mara and SH Chung, 2004. Conduction Mechanisms of Chloride Ions in ClC-type Channels. Biophysical Journal 86:846-60</li>
+        </ul>
+        <h1>2003</h1>
+        <ul>
+            <li>M O’Mara, PH Barry and SH Chung. 2003. A model of the glycine receptor deduced from Brownian dynamics studies. Proceedings of the National Academy of Sciences USA 100:4310-15</li>
+        </ul>
+    </body>
+</html>
+

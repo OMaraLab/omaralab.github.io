@@ -1,0 +1,15 @@
+---
+permalink: /news.html
+---
+<html>
+    <head></head>
+    <body>
+        <h1>News</h1>
+        {% assign sorted = site.news | sort: 'date' | reverse %}
+        {% for story in sorted %}
+            <h5>{{story.date | date: "%e %b, %Y" }}</h5>
+            <h4><a href="{{story.url}}">{{story.title}}</a></h4>
+            <br/>
+        {% endfor %}
+    </body>
+</html>
