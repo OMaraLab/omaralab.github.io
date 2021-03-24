@@ -6,14 +6,15 @@ permalink: /staff.html
     <body>
         <h1>Staff</h1>
         {% assign sorted = site.staff | sort: 'rank' %}
-        {% for person in sorted %}
-            <a href="{{ person.url }}">
-                <img src="/images/{{person.photo}}" alt="{{person.name}}" style="height:100px">
-            </a>
-            <br/>
-            <a href="{{ person.url }}">{{ person.name }}</a> - {{ person.role }}
-            <br/>
-            <br/>
-        {% endfor %}
+        <div id="staff">
+            {% for person in sorted %}
+                <div class="gallery">
+                    <a href="{{person.url}}"> <img src="/images/{{person.photo}}" alt="{{person.name}}" width="600" height="400" /></a>
+                    <div class="desc">{{person.name}}</div>
+                </div>
+            {% endfor %}
+        </div>
+        <br/>
     </body>
+
 </html>
