@@ -13,7 +13,7 @@ permalink: /publish.html
                 {% assign yearTitlesSorted = y.items | sort: "FI" %}
                 {% for paper in yearTitlesSorted %}
                     <li>{{ paper.cite }} 
-                        {% if user %}
+                        {% if paper.DOI %}
                         [<a href="https://doi.org/{{ paper.DOI }}">link</a>]
                         {% endif %} 
                     </li>
