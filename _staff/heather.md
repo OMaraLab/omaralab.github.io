@@ -1,5 +1,6 @@
 ---
 name: Heather Aitken 
+permalink: /heather
 photo: heather.png
 role: PhD candidate
 quals: BSc (hons)
