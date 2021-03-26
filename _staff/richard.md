@@ -11,7 +11,6 @@ email: u6612992@anu.edu.au
 # {{page.name}} 
 ### {{page.quals}}
 
-
 ![{{page.name}}](/images/{{ page.photo }})
 
 * [{{page.email}}](mailto:{{page.name}})
