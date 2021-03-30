@@ -7,5 +7,5 @@ permalink: /dev
 
 # Development
 
-* [Sushi - new system setup](https://github.com/OMaraLab/sushi)
-* [Omaralab github](https://github.com/OMaraLab)
+* [Sushi - new system setup](https://omaralab.com/sushi)
+* [Omaralab github](http://github.omaralab.com)
