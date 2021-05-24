@@ -2,10 +2,10 @@
 name: Vrinda Gupta
 photo: vrinda.png
 permalink: /vrinda
-role: PhD student
-quals: BSc (hons)
+role: PhD Candidate
+quals: Bachelor of Philosophy (Honours)- Science
 rank: 3
-email: u6373361@anu.edu.au
+email: vrinda.gupta@anu.edu.au
 ---
 # {{page.name}} 
 ### {{page.quals}}
